@@ -1,0 +1,5 @@
+[
+{"kind":"meta","schema":1,"variant":"empty","repo":"empty-repo","capturedAt":1795222018,"git":"git version 2.43.0","shallow":false,"defaultBranch":null,"commands":[{"cmd":"git rev-parse --is-inside-work-tree --show-toplevel --is-shallow-repository","n":1},{"cmd":"git symbolic-ref -q HEAD","n":1},{"cmd":"git rev-parse -q --verify HEAD^{commit}","n":1},{"cmd":"git version","n":1},{"cmd":"git for-each-ref --format=<NUL-separated fields> refs/heads refs/remotes refs/tags","n":1},{"cmd":"git status --porcelain=v2 -z --branch --untracked-files=normal","n":1}]},
+{"kind":"head","hash":null,"ref":"refs/heads/main","detached":false,"unborn":true},
+{"kind":"status","branch":"main","oid":"(initial)","upstream":null,"ahead":0,"behind":0,"staged":0,"modified":0,"untracked":0,"conflicted":0}
+]

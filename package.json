@@ -1,0 +1,30 @@
+{
+  "name": "git-timeline",
+  "version": "0.1.0",
+  "description": "A read-only terminal timeline of your Git history: one scrolling world through Earth's history, with branches as trails.",
+  "license": "MIT",
+  "keywords": ["git", "cli", "tui", "terminal", "timeline", "history", "graph", "log"],
+  "bin": {
+    "git-timeline": "dist/cli/main.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node scripts/clean.mjs && tsc -p tsconfig.json && node scripts/postbuild.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node scripts/run-tests.mjs",
+    "pack:check": "npm pack --dry-run",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
