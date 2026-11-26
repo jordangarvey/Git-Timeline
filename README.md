@@ -55,10 +55,17 @@ git-timeline  HEAD → main cf7d48a  77 commits  1 column = 1 day  (snapshot, no
 
 You need **Node.js 18 or newer** and **Git 2.15 or newer** on your `PATH`.
 
-From the package file:
+Run it once, with nothing installed:
 
 ```sh
-npm install -g ./git-timeline-0.1.0.tgz
+cd your-repo
+npx @jordangarvey/git-timeline
+```
+
+Or install it globally, then run `git-timeline` (or `git timeline`) anywhere:
+
+```sh
+npm install -g @jordangarvey/git-timeline
 ```
 
 From source:
